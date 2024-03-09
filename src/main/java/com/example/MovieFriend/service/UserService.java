@@ -13,6 +13,7 @@ import java.util.Optional;
 public class UserService {
     private final UserRepository userRepository;
     public User saveUser(User user) {
+
         return userRepository.save(user);
     }
 
@@ -33,8 +34,8 @@ public class UserService {
         return null;
     }
 
-    public String deleteUserById(Long id) {
+    public void deleteUserById(Long id) {
         userRepository.deleteById(id);
-        return "Success";
+
     }
 }

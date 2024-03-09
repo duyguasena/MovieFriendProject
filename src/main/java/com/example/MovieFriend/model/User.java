@@ -5,13 +5,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-//1. **Kullanıcı Yönetimi:**
-//
-//
-//         hesaplarını silebilmelidir.
-//
-
-
 @Entity
 @Table(name="users")
 @Getter
